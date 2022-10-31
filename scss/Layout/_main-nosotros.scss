@@ -1,0 +1,22 @@
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 40px;
+    padding-top: 10px;
+  }
+  
+  .texto {
+    text-align: left;
+    display: block;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .contenido-nosotros img {
+    border-radius: 5%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }

@@ -1,0 +1,51 @@
+
+.inicio {
+    min-height: 100vh;
+    background-image: url(../Assets/Fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+    &::before {
+      content: "";
+      width: 70%;
+      height: 50%;
+      background-color: rgb(47, 47, 47);
+      position: absolute;
+      opacity: 0.6;
+      display: grid;
+    }
+  
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 250%;
+      font-weight: bolder;
+      color: white;
+      letter-spacing: 8px;
+      position: relative;
+      margin-top: 30px;
+      text-align: center;
+    }
+  
+    p {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: lighter;
+      font-size: 150%;
+      color: white;
+      margin-left: 250px;
+      margin-right: 250px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: relative;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+
+.locales {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    img {
+      display: block;
+      margin: auto;
+      border-radius: 15px;
+    }
+  }
+  
+  .local {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+  
+    iframe {
+      display: block;
+      margin: auto;
+    }
+  }

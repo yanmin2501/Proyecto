@@ -1,0 +1,65 @@
+
+@media screen and (min-with: 480px) and (max-width: 880px) {
+    .menu li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 15px;
+    }
+  
+    .inicio {
+      h2 {
+        text-align: center;
+      }
+  
+      p {
+        font-size: 150%;
+        margin: 15px;
+      }
+    }
+  
+    .contenido-nosotros {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .texto {
+      text-align: center;
+      margin: 30px;
+      font-size: large;
+    }
+  
+    .img img {
+      width: 400px;
+    }
+  
+    .carta {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      padding: 30px;
+      gap: 3em;
+  
+      img {
+        width: 200px;
+      }
+    }
+  
+    .local {
+      h3 {
+        text-align: center;
+        padding-top: 10px;
+      }
+  
+      p {
+        margin: 15px;
+        padding: 0%;
+        font-size: smaller;
+      }
+    }
+  
+    .locales img {
+      padding: 10px;
+    }
+  }

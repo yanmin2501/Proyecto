@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh! LaLá Café</title>
+    <link rel="shortcut icon" href="../Assets/logoohlala.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="./Assets/Ohlala_logomarron.png" alt="" width="250px"></a>
+        </div>
+        <div>
+            <nav class="navbar">
+                <ul class="menu">
+                    <li> <a href="index.html">INICIO</a></li>
+                    <li> <a href="carta.html">NUESTRA CARTA</a></a></li>
+                    <li> <a href="nosotros.html">NOSOTROS</a></li>
+                    <li> <a href="locales.html">LOCALES</a></li>
+                    <li> <a href="reservas.html">RESERVAS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="formulario">
+        <form class="reservas">
+            <label for="Nombre completo">Nombre completo:</label>
+            <input type="text" name="Nombre completo" required> <br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" required> <br><br>
+            <label for="Cantidad de personas">Cantidad de personas:</label>
+            <select name="Cantidad de personas">
+                <div>Cantidad de personas:</div>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select><br><br>
+        <div class="seleccion">
+            <label for="local">Seleccione el local:</label> <br>
+            <input type="radio" name="local" value="Olavarria"> Olavarria 3060
+            <input type="radio" name="local" value="constitucion"> Constitución 4296 <br><br>
+            <label for="mensaje">
+         </div>
+                <textarea name="" id="mensaje" cols="30" rows="10">Algo que desee aclarar</textarea>
+            </label><br><br>
+        <div class="botones">
+            <input type="submit" value="ENVIAR RESERVA">
+            <input type="reset" value="BORRAR">
+        </form>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="colum">
+            <h3>HORARIOS</h3>
+            <p>Lunes a Sábados: 7am - 8pm </p>
+            <p>Domingos: 8am - 7pm</p>
+        </div>
+
+        <div class="colum">
+            <h3>NUESTRAS DIRECCIONES</h3>
+            <p>Olavarria 3060</p>
+            <p>Constitución 4296</p>
+        </div>
+
+        <div class="colum">
+            <h3>REDES SOCIALES</h3>
+            <img src="../Assets/facebook.png" alt="" width="25px">
+            <img src="../Assets/instagram.png" alt="" width="25px">
+            <img src="../Assets/email.png" alt="" width="25px">
+        </div>
+    </footer>
+</body>
+
+</html>
