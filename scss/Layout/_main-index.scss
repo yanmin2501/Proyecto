@@ -2,34 +2,29 @@
 .inicio {
     min-height: 100vh;
     background-image: url(../Assets/Fondo2.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include background-image (cover, center, fixed);
+    @include flex (column, center, center);
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
   
-    &::before {
-      content: "";
-      width: 70%;
-      height: 50%;
-      background-color: rgb(47, 47, 47);
-      position: absolute;
-      opacity: 0.6;
-      display: grid;
-    }
+    // &::before {
+    //   content: "";
+    //   width: 70%;
+    //   height: 50%;
+    //   background-color: rgb(47, 47, 47);
+    //   position: absolute;
+    //   opacity: 0.6;
+    //   display: grid;
+    // }
   
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 250%;
       font-weight: bolder;
-      color: white;
+      color:$texto-en-fondo;
       letter-spacing: 8px;
       position: relative;
       margin-top: 30px;
@@ -40,7 +35,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-weight: lighter;
       font-size: 150%;
-      color: white;
+      color:$texto-en-fondo;
       margin-left: 250px;
       margin-right: 250px;
       margin-top: 30px;
@@ -49,3 +44,26 @@
     }
   }
   
+  /* CSS de cosas más generales */
+
+ .subtitulos {
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-large;
+  font-weight: bolder;
+  color: $texto-subtitulos-subsubtitulos;
+  margin: 50px;
+}
+
+.texto {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bolder;
+  font-size: medium;
+ color: black;
+}
+
+.sub-subtitulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+ color: $texto-subtitulos-subsubtitulos;
+}

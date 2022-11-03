@@ -11,9 +11,7 @@
   }
   
   .local {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+   @include flex (column, center, none);
     padding: 20px;
   
     iframe {

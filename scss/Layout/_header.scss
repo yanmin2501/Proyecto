@@ -6,9 +6,7 @@
   }
   
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @include flex (none, center, center);
     margin: 30px;
   }
   

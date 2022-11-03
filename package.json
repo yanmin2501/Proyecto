@@ -239,5 +239,13 @@
     "nopt": "^5.0.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanmin2501/Proyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yanmin2501/Proyecto/issues"
+  },
+  "homepage": "https://github.com/yanmin2501/Proyecto#readme",
   "description": ""
 }

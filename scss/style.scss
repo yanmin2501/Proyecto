@@ -1,36 +1,13 @@
-
+@import "./Utilities/variable" ;
+@import "./Base/reset" ;
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:ital,wght@0,400;1,500&display=swap');
-@import url(./Layout/_header.scss);
-@import url(./Layout/_main-index.scss);
-@import url(./Layout/_main-carta.scss);
-@import url(./Layout/_main-nosotros.scss);
-@import url(./Layout/_main-locales.scss);
-@import url(./Layout/_main-reservas.scss);
-@import url(./Layout/_footer.scss);
-@import url(./Layout/_media-tablet.scss);
-@import url(./Layout/_media-mobile.scss);
-
-/* CSS de cosas más generales */
-
-.subtitulos {
-  font-family: 'Montserrat', sans-serif;
-  font-size: x-large;
-  font-weight: bolder;
-  color: rgb(23, 7, 7);
-  margin: 50px;
-}
-
-.texto {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: bolder;
-  font-size: medium;
-  color: black;
-}
-
-.sub-subtitulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: large;
-  font-weight: bolder;
-  color: rgb(23, 7, 7);
-}
-
+@import "./Utilities/mixins" ;
+@import "./Layout/header";
+@import "./Layout/main-index";
+@import "./Layout/main-carta";
+@import "./Layout/main-nosotros";
+@import "./Layout/main-locales";
+@import "./Layout/main-reservas";
+@import "./Layout/footer";
+@import "./Layout/media-tablet" ;
+@import "./Layout/media-mobile" ;

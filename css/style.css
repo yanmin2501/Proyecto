@@ -1,14 +1,79 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:ital,wght@0,400;1,500&display=swap");
-@import url(./Layout/_header.scss);
-@import url(./Layout/_main-index.scss);
-@import url(./Layout/_main-carta.scss);
-@import url(./Layout/_main-nosotros.scss);
-@import url(./Layout/_main-locales.scss);
-@import url(./Layout/_main-reservas.scss);
-@import url(./Layout/_footer.scss);
-@import url(./Layout/_media-tablet.scss);
-@import url(./Layout/_media-mobile.scss);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: none;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  font-size: smaller;
+  letter-spacing: 3px;
+}
+.menu li {
+  display: inline;
+  margin-inline: 30px;
+}
+.menu li a {
+  color: rgb(23, 7, 7);
+  text-decoration: none;
+}
+
+.inicio {
+  min-height: 100vh;
+  background-image: url(../Assets/Fondo2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.inicio h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 250%;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 8px;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+.inicio p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: lighter;
+  font-size: 150%;
+  color: white;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
 /* CSS de cosas más generales */
 .subtitulos {
   font-family: "Montserrat", sans-serif;
@@ -30,6 +95,310 @@
   font-size: large;
   font-weight: bolder;
   color: rgb(23, 7, 7);
+}
+
+.fondo-carta {
+  min-height: 100vh;
+  background-image: url(../Assets/croissants-g063595cd1_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.fondo-carta h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 8px;
+  position: relative;
+  margin-right: 90px;
+}
+
+.carta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 30px;
+  gap: 3em;
+}
+.carta h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+.carta p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: small;
+  color: black;
+  text-align: center;
+  margin: 5px 10px 5px 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgba(129, 128, 128, 0.5);
+  padding: 10px;
+}
+.card img {
+  border-radius: 3px;
+  margin: 20px 0 20px 0;
+}
+
+.contenido-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat 2, 1fr;
+  padding: 40px;
+  padding-top: 10px;
+}
+
+.texto {
+  text-align: left;
+  display: block;
+  margin: auto;
+  padding: 40px;
+}
+
+.contenido-nosotros img {
+  border-radius: 5%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.locales {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.locales img {
+  display: block;
+  margin: auto;
+  border-radius: 15px;
+}
+
+.local {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: none;
+  padding: 20px;
+}
+.local iframe {
+  display: block;
+  margin: auto;
+}
+
+.formulario {
+  background-image: url(../Assets/Inicio.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: none;
+  position: relative;
+}
+
+.reservas {
+  text-align: center;
+  padding: 200px;
+}
+.reservas label {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.seleccion {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.botones {
+  font-family: "Montserrat", sans-serif;
+  font-size: x-small;
+  font-weight: bolder;
+  color: black;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  padding: 40px;
+}
+
+.colum h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  font-weight: bolder;
+  color: rgb(23, 7, 7);
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 5px;
+}
+.colum p {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bolder;
+  font-size: medium;
+  color: black;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media screen and (min-with: 480px) and (max-width: 880px) {
+  .menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    margin: 15px;
+  }
+  .inicio h2 {
+    text-align: center;
+  }
+  .inicio p {
+    font-size: 150%;
+    margin: 15px;
+  }
+  .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+  }
+  .texto {
+    text-align: center;
+    margin: 30px;
+    font-size: large;
+  }
+  .img img {
+    width: 400px;
+  }
+  .carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 30px;
+    gap: 3em;
+  }
+  .carta img {
+    width: 200px;
+  }
+  .local h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .local p {
+    margin: 15px;
+    padding: 0%;
+    font-size: smaller;
+  }
+  .locales img {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    font-size: x-small;
+  }
+  .menu li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: none;
+    margin: 15px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer div img {
+    width: 18px;
+  }
+  .colum {
+    margin: 15px;
+  }
+  .colum h3 {
+    font-size: x-small;
+  }
+  .colum p {
+    font-size: small;
+  }
+  .inicio::before {
+    content: "";
+    width: 80%;
+    height: 50%;
+    background-color: rgb(47, 47, 47);
+    position: absolute;
+    opacity: 0.6;
+  }
+  .inicio h2 {
+    font-size: 170%;
+    text-align: center;
+  }
+  .inicio p {
+    font-size: 100%;
+    margin: 15px;
+  }
+  .contenido-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: none;
+  }
+  .texto {
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: small;
+  }
+  .contenido-nosotros img {
+    width: 350px;
+  }
+  .carta {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 3em;
+  }
+  .carta img {
+    width: 200px;
+  }
+  .locales {
+    display: flex;
+    flex-direction: column;
+  }
+  .local h3 {
+    text-align: center;
+    padding-top: 10px;
+  }
+  .local p {
+    margin: 15px;
+    padding: 0%;
+    font-size: smaller;
+  }
+  .reservas label, .seleccion {
+    font-size: small;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

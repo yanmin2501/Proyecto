@@ -1,7 +1,6 @@
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid (repeat(3,1fr), none);
     padding: 40px;
   }
   
@@ -10,7 +9,7 @@
       font-family: 'Montserrat', sans-serif;
       font-size: small;
       font-weight: bolder;
-      color: rgb(23, 7, 7);
+      color:$texto-subtitulos-subsubtitulos;
       letter-spacing: 3px;
       text-align: center;
       margin: 5px;
@@ -20,7 +19,7 @@
       font-family: 'Cormorant Garamond', serif;
       font-weight: bolder;
       font-size: medium;
-      color: black;
+      color:$texto-comun;
       line-height: 30px;
       text-align: center;
     }

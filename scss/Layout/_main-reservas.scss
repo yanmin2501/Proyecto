@@ -2,8 +2,7 @@
 .formulario {
     background-image: url(../Assets/Inicio.jpg);
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    @include background-image (cover, center, none);
     position: relative;
   }
   

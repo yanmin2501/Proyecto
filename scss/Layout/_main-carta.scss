@@ -2,13 +2,8 @@
 .fondo-carta {
     min-height: 100vh;
     background-image: url(../Assets/croissants-g063595cd1_1920.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    @include background-image (cover, center, fixed);
+    @include flex (column, center, flex-end);
     padding: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -19,7 +14,7 @@
       font-family: 'Montserrat', sans-serif;
       font-size: xx-large;
       font-weight: bolder;
-      color: white;
+      color:$texto-en-fondo;
       letter-spacing: 8px;
       position: relative;
       margin-right: 90px;
@@ -27,9 +22,7 @@
   }
   
   .carta {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    @include grid (repeat(3,1fr), repeat(2,1fr));
     padding: 30px;
     gap: 3em;
   
@@ -37,7 +30,7 @@
       font-family: 'Montserrat', sans-serif;
       font-size: 100%;
       font-weight: bolder;
-      color: rgb(0, 0, 0);
+      color:$texto-comun;
       text-align: center;
     }
   
@@ -45,18 +38,15 @@
       font-family: 'Cormorant Garamond', serif;
       font-weight: bolder;
       font-size: small;
-      color: black;
+      color:$texto-comun;
       text-align: center;
       margin: 5px 10px 5px 10px;
     }
   }
   
   .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    @include flex (column, center, center);
+    background-color:$background-card;
     border-radius: 10px;
     box-shadow: 0 0 5px 5px rgba(129, 128, 128, 0.5);
     padding: 10px;
