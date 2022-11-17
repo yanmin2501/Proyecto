@@ -1,21 +1,74 @@
 
 .locales {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
   
     img {
-      display: block;
-      margin: auto;
-      border-radius: 15px;
+      border-radius: 8px;
     }
   }
-  
-  .local {
-   @include flex (column, center, none);
-    padding: 20px;
-  
-    iframe {
-      display: block;
-      margin: auto;
-    }
+
+  .sub-text{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 150%;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom:30px;
+    padding:30px;
+    background-color: rgba(27, 12, 12, 0.938);
+}
+
+.sub-text {
+	-webkit-animation: sub-text 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+	        animation: sub-text 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+}
+
+@-webkit-keyframes sub-text {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
   }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+@keyframes sub-text {
+  0% {
+    -webkit-filter: blur(0.01);
+            filter: blur(0.01);
+  }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+            filter: blur(12px) opacity(0%);
+  }
+}
+
+  .carousel{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  }
+
+
+.local{
+padding: 30px;
+
+  p{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    font-size: large;
+    color: black;
+    margin: 0;
+  }
+}
+

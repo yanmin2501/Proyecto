@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oh! LaLá Café</title>
+    <title>Oh! LaLá Café | Reservas</title>
     <meta name="author" content="Yasmin Marquez">
     <meta name="description"
-        content="Oh! LaLá Café, somos de Mar del Plata. Ofrecemos cafeteria y pateleria de especialidad, abrimos todos los dias.Te invitamos a completar el formulario de reservas.">
+        content="Oh! LaLá Café, somos de Mar del Plata. Ofrecemos cafeteria y pasteleria de especialidad, abrimos todos los dias.Te invitamos a completar el formulario de reservas.">
     <meta property="og:title" content="Oh! LaLá Café">
     <meta property="og:description"
         content="Somos de Mar del Plata. Ofrecemos cafeteria y pateleria de especialidad, abrimos todos los dias. Te invitamos a completar el formulario de reservas.">
@@ -37,35 +37,96 @@
         </div>
     </header>
     <main>
-    <div class="formulario">
-        <form class="reservas">
-            <label for="Nombre completo">Nombre completo:</label>
-            <input type="text" name="Nombre completo" required> <br><br>
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" required> <br><br>
-            <label for="Cantidad de personas">Cantidad de personas:</label>
-            <select name="Cantidad de personas">
-                <div>Cantidad de personas:</div>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="8">8</option>
-            </select><br><br>
-        <div class="seleccion">
-            <label for="local">Seleccione el local:</label> <br>
-            <input type="radio" name="local" value="Olavarria"> Olavarria 3060
-            <input type="radio" name="local" value="constitucion"> Constitución 4296 <br><br>
-            <label for="mensaje">
-         </div>
-                <textarea name="" id="mensaje" cols="30" rows="10">Algo que desee aclarar</textarea>
-            </label><br><br>
-        <div class="botones">
-            <input type="submit" value="ENVIAR RESERVA">
-            <input type="reset" value="BORRAR">
-        </form>
+        <!-- 
+        <div class="formulario"> 
+
+        <div class="formulario">
+            <form class="form">
+                <h2 class="form-title">Reservas</h2>
+
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="Nombre completo" class="form-label">Nombre:</label>
+                        <input type="text" class="form-input" name="Nombre completo" required>
+                        <span class="form-line"></span>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-input" id="email" required>
+                        <span class="form-line"></span>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="Cantidad de personas" class="form label">Cantidad de personas:</label>
+                        <select name="Cantidad de personas">
+                          
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="local" class="form-label">Seleccione el local:</label>
+                        <input type="radio" name="local" value="Olavarria" class="form-input"> Olavarria 3060
+                        <input type="radio" name="local" value="constitucion" class="form-input"> Constitución 4296
+                    </div>
+                </div>
+
+                <input type="submit" class="form-submit" value="ENVIAR">
+
+            </form>
+        </div> -->
+
+
+
+        <div class="formulario">
+            <form class="form">
+                <h2 class="form-title">RESERVAS</h2>
+
+                <div class="form-container">
+                    <label for="Nombre completo">NOMBRE COMPLETO</label>
+                    <input type="text" name="Nombre completo" required>
+                </div>
+
+                <div class="form-container">
+                    <label for="email">CORREO ELECTRONICO</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-container">
+                    <label for="cant.personas">CANTIDAD DE PERSONAS </label>
+                    <select  class="opciones" name="cant.personas">
+                        <div>Cantidad de personas</div>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+
+                <div class="form-container">
+                    <label for="sucursal">SELECCION DE SUCURSAL </label>
+                    <select class="opciones" name="sucursal">
+                        <div>Seleccion de sucursal </div>
+                        <option value="Olavarria">Olavarria 3060</option>
+                        <option value="Constitución">Constitución 4296</option>
+                    </select>
+                </div>
+                <div class="boton-submit">
+                    <input type="submit" value="ENVIAR">
+                </div>
+            </form>
         </div>
-    </div>
+        </div>
     </main>
+
+
     <footer class="footer">
         <div class="colum">
             <h3>HORARIOS</h3>
@@ -81,9 +142,14 @@
 
         <div class="colum">
             <h3>REDES SOCIALES</h3>
-            <img src="../Assets/facebook.png" alt="" width="25px">
-            <img src="../Assets/instagram.png" alt="" width="25px">
-            <img src="../Assets/email.png" alt="" width="25px">
+            <div class="iconos">
+                <a href="https://es-la.facebook.com/"><img src="../Assets/facebook.png" alt="logo Facebook"
+                        width="20px"></a>
+                <a href="https://www.instagram.com/"><img src="../Assets/instagram.png" alt="logo instagram"
+                        width="20px"></a>
+                <a href="https://www.google.com/intl/es-419/gmail/about/"><img src="../Assets/email.png"
+                        alt="logo email" width="20px"></a>
+            </div>
         </div>
     </footer>
 </body>

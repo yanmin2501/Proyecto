@@ -4,10 +4,39 @@
     justify-content: center;
     margin: 20px;
   }
+
+  
+   .logo {
+     -webkit-animation: logo 0.9s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+             animation: logo 0.9s cubic-bezier(0.445, 0.050, 0.550, 0.950) both;
+   }
+
+   @-webkit-keyframes logo {
+     0% {
+       -webkit-transform: scale(0.5);
+               transform: scale(0.5);
+     }
+     100% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+   }
+   @keyframes logo {
+     0% {
+       -webkit-transform: scale(0.5);
+               transform: scale(0.5);
+     }
+     100% {
+       -webkit-transform: scale(1);
+               transform: scale(1);
+     }
+   }
+  
   
   .navbar {
   @include flex (none, center, center);
-    margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   }
   
   .menu {
@@ -16,14 +45,46 @@
     font-weight: bolder;
     font-size: smaller;
     letter-spacing: 3px;
+    
   
     li {
-      display: inline;
+      display: inline-block;
       margin-inline: 30px;
-  
-      a {
-        color: rgb(23, 7, 7);
-        text-decoration: none;
+      }
+
+    a{
+      text-decoration: none;
+      color:rgb(23,7,7);
+
+    }
+
+    li {
+      -webkit-animation: tracking-out-contract 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+              animation: tracking-out-contract 0.8s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
+    }
+
+    @-webkit-keyframes tracking-out-contract {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+      }
+    }
+    @keyframes tracking-out-contract {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        letter-spacing: -0.5em;
+        opacity: 0;
       }
     }
   }

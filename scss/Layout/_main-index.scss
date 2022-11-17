@@ -10,40 +10,72 @@
     margin-left: 20px;
     margin-right: 20px;
   
-    // &::before {
-    //   content: "";
-    //   width: 70%;
-    //   height: 50%;
-    //   background-color: rgb(47, 47, 47);
-    //   position: absolute;
-    //   opacity: 0.6;
-    //   display: grid;
-    // }
+.inicio2 {
+  background-color: rgba(29, 29, 29, 0.767);
+  padding: 50px;
+  margin: 0 50px 0 50px;
+}
   
+.inicio2 {
+      -webkit-animation: inicio2 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: inicio2 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+  @-webkit-keyframes inicio2 {
+      0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+                transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateZ(12px);
+                transform: translateZ(12px);
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+      }
+    }
+  @keyframes inicio2 {
+      0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+                transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateZ(12px);
+                transform: translateZ(12px);
+        -webkit-filter: blur(0);
+                filter: blur(0);
+        opacity: 1;
+      }
+    }
+    
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 250%;
       font-weight: bolder;
       color:$texto-en-fondo;
       letter-spacing: 8px;
-      position: relative;
       margin-top: 30px;
       text-align: center;
     }
-  
+    
     p {
       font-family: 'Cormorant Garamond', serif;
       font-weight: lighter;
-      font-size: 150%;
+      font-size: 160%;
       color:$texto-en-fondo;
-      margin-left: 250px;
-      margin-right: 250px;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      position: relative;
-    }
+      margin: 30px;
+      text-align: center;
+      font-style: italic;
   }
-  
+}
   /* CSS de cosas más generales */
 
  .subtitulos {
@@ -52,6 +84,7 @@
   font-weight: bolder;
   color: $texto-subtitulos-subsubtitulos;
   margin: 50px;
+  letter-spacing: 3px;
 }
 
 .texto {
@@ -65,5 +98,5 @@
   font-family: 'Montserrat', sans-serif;
   font-size: large;
   font-weight: bolder;
- color: $texto-subtitulos-subsubtitulos;
+  color: $texto-subtitulos-subsubtitulos;
 }

@@ -31,14 +31,7 @@
     }
   
     .inicio {
-      &::before {
-        content: "";
-        width: 80%;
-        height: 50%;
-        background-color: rgb(47, 47, 47);
-        position: absolute;
-        opacity: 0.6;
-      }
+      
   
       h2 {
         font-size: 170%;
