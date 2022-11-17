@@ -72,3 +72,22 @@ padding: 30px;
   }
 }
 
+.boton-reservas{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  text-decoration: none;
+
+  input{
+    background: rgba(27, 12, 12, 0.938);
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    font-size: small;
+    letter-spacing: 2px;
+    padding: 12px;
+    border: none;
+    border-radius: .5em;
+    cursor: pointer;
+  }
+}
