@@ -12,6 +12,7 @@
     .footer {
       display: flex;
       flex-direction: column;
+      padding: 10px;
   
       div img {
         width: 18px;
@@ -34,14 +35,23 @@
       
   
       h2 {
-        font-size: 170%;
+        font-size: large;
         text-align: center;
       }
   
       p {
-        font-size: 100%;
+        font-size: small;
         margin: 15px;
       }
+
+      .inicio2{
+        padding: 10px;
+        margin: auto;
+      }
+    }
+
+    .subtitulos{
+      font-size: large;
     }
   
     .contenido-nosotros {
@@ -59,12 +69,25 @@
       width: 350px;
     }
   
+    .fondo-carta{
+    h2{
+      font-size:large;
+    }
+    }
     .carta {
       display: flex;
       flex-direction: column;
       padding: 30px;
       gap: 3em;
   
+      h4{
+        font-size: small;
+      }
+
+      p{
+        font-size: small;
+      }
+
       img {
         width: 200px;
       }
@@ -88,7 +111,15 @@
       }
     }
   
-    .reservas label, .seleccion {
-      font-size: small;
+    .form-title{
+    font-size: large;
+    }
+
+    .form-container{
+    font-size: x-small;
+    }
+
+    .opciones{
+    font-size: x-small;
     }
   }

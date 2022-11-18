@@ -1,8 +1,4 @@
 
-body{
-  overflow-x: hidden;
-}
-
 .fondo-carta {
     min-height: 100vh;
     background-image: url(../Assets/croissants-g063595cd1_1920.jpg);
@@ -66,8 +62,8 @@ body{
   }
   
   .carta {
-    @include grid (repeat(3,1fr), repeat(2,1fr));
-    padding: 30px;
+    @include grid (repeat(2,1fr), repeat(2,1fr));
+    padding: 0 100px 50px 100px;
     gap: 3em;
   
     h4 {
@@ -92,10 +88,11 @@ body{
     @include flex (column, center, center);
     background-color:$background-card;
     border-radius: 10px;
-    box-shadow: 0 0 5px 5px rgba(129, 128, 128, 0.5);
-    padding: 10px;
+    box-shadow: 0px 0px 8px 3px rgba(133, 133, 133, 0.486);
+    padding: 10px 0 10px 0;
   
     img {
+      width: 400px;
       border-radius: 3px;
       margin: 20px 0 20px 0;
     }

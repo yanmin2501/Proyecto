@@ -192,10 +192,6 @@
   color: rgb(23, 7, 7);
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .fondo-carta {
   min-height: 100vh;
   background-image: url(../Assets/croissants-g063595cd1_1920.jpg);
@@ -262,9 +258,9 @@ body {
 
 .carta {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding: 30px;
+  padding: 0 100px 50px 100px;
   gap: 3em;
 }
 .carta h4 {
@@ -290,10 +286,11 @@ body {
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 5px 5px rgba(129, 128, 128, 0.5);
-  padding: 10px;
+  box-shadow: 0px 0px 8px 3px rgba(133, 133, 133, 0.486);
+  padding: 10px 0 10px 0;
 }
 .card img {
+  width: 400px;
   border-radius: 3px;
   margin: 20px 0 20px 0;
 }
@@ -327,7 +324,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 30px;
 }
 .locales img {
   border-radius: 8px;
@@ -342,8 +338,6 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 50px;
-  position: relative;
-  padding-bottom: 30px;
   padding: 30px;
   background-color: rgba(27, 12, 12, 0.938);
 }
@@ -393,8 +387,8 @@ body {
 .boton-reservas {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   text-decoration: none;
+  padding-bottom: 40px;
 }
 .boton-reservas input {
   background: rgba(27, 12, 12, 0.938);
@@ -416,16 +410,17 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: none;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
   background-color: rgba(32, 32, 32, 0.651);
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
   border-radius: 10px;
+  padding: 50px;
+  margin: 0, auto;
+  display: inline-block;
 }
 
 .form-title {
@@ -478,8 +473,8 @@ body {
   margin-top: 50px;
 }
 .boton-submit input {
-  background: white;
-  color: black;
+  background: rgb(73, 85, 255);
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   font-size: small;
@@ -589,6 +584,7 @@ body {
   .footer {
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
   .footer div img {
     width: 18px;
@@ -603,12 +599,19 @@ body {
     font-size: small;
   }
   .inicio h2 {
-    font-size: 170%;
+    font-size: large;
     text-align: center;
   }
   .inicio p {
-    font-size: 100%;
+    font-size: small;
     margin: 15px;
+  }
+  .inicio .inicio2 {
+    padding: 10px;
+    margin: auto;
+  }
+  .subtitulos {
+    font-size: large;
   }
   .contenido-nosotros {
     display: flex;
@@ -625,11 +628,20 @@ body {
   .contenido-nosotros img {
     width: 350px;
   }
+  .fondo-carta h2 {
+    font-size: large;
+  }
   .carta {
     display: flex;
     flex-direction: column;
     padding: 30px;
     gap: 3em;
+  }
+  .carta h4 {
+    font-size: small;
+  }
+  .carta p {
+    font-size: small;
   }
   .carta img {
     width: 200px;
@@ -647,8 +659,14 @@ body {
     padding: 0%;
     font-size: smaller;
   }
-  .reservas label, .seleccion {
-    font-size: small;
+  .form-title {
+    font-size: large;
+  }
+  .form-container {
+    font-size: x-small;
+  }
+  .opciones {
+    font-size: x-small;
   }
 }
 
