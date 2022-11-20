@@ -2,12 +2,14 @@
 @media screen and (max-width: 480px) {
     .menu {
       font-size: x-small;
+      padding-left: 0px;
   
       li {
       @include flex(row, center, none);
         margin: 15px;
       }
     }
+
   
     .footer {
       display: flex;
@@ -52,6 +54,7 @@
 
     .subtitulos{
       font-size: large;
+      margin: 15px
     }
   
     .contenido-nosotros {
@@ -59,14 +62,16 @@
     }
   
     .texto {
-      text-align: center;
+      text-align:center;
       display: block;
       margin: auto;
       font-size: small;
+      padding: 10px 0 10px 0;
+      
     }
   
     .contenido-nosotros img {
-      width: 350px;
+      width: 200px;
     }
   
     .fondo-carta{
@@ -98,19 +103,22 @@
       flex-direction: column;
     }
   
+    .sub-text{
+      font-size: medium;
+    }
     .local {
-      h3 {
-        text-align: center;
-        padding-top: 10px;
-      }
-  
+
       p {
         margin: 15px;
         padding: 0%;
         font-size: smaller;
       }
     }
-  
+  .boton-reservas{
+    input{
+      font-size: x-small;
+    }
+  }
     .form-title{
     font-size: large;
     }

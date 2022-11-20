@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 480px) and (max-width: 880px) {
+    .menu{
+      padding: 0px;
+    }
+
     .menu li {
       @include flex(row, center, none);
       margin: 15px;

@@ -6,9 +6,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex (none, center, center);
 }
 
 .form {
@@ -30,10 +28,7 @@
 
 .form-container {
   margin-top: 3em;
-  display: flex; 
-  flex-direction:column; 
-  align-items:center; 
-  justify-content: center;
+  @include flex (column, center, center);
   gap: 1em;
   color: white;
   font-family:"Montserrat", sans-serif ;
